@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light" data-font="default">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кирилл Симуков — дизайнер сайтов | Краснодар</title>
+
+  <!-- Шрифты Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&family=Playfair+Display:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ПРЕЛОАДЕР -->
+<div id="preloader">
+  <div class="pre-mono">simukovdesign</div>
+  <div class="pre-track"><div class="pre-fill"></div></div>
+</div>
+
+<!-- КУРСОР + ПРОГРЕСС -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div id="scrollProg"></div>
+
+<!-- ХЕДЕР -->
+<header id="hdr">
+  <div class="brand">Кирилл Симуков · маркетинг в сайтах</div>
+  <div class="hdr-r">
+    <button class="theme-btn" id="themeToggle" title="Переключить тему" aria-label="Переключить тему">☾</button>
+    <button class="menu-btn" onclick="smoothTo('contact')">Связаться</button>
+  </div>
+</header>
+
+<!-- ГЕРОЙ -->
+<section class="hero">
+  <h1 class="hero-title">
+    <span>дизайнер</span><br>
+    <span>сайтов и</span> <span>маркетолог</span>
+  </h1>
+  <div class="scatter s-name">имя<b>Кирилл Симуков</b></div>
+  <div class="scatter s-city">город<b>Краснодар</b></div>
+  <div class="scatter s-exp">опыт<b>3+ года</b></div>
+  <div class="scatter s-projects">проектов<b>60+</b></div>
+  <div class="scatter s-stack">инструменты<b>Figma · Tilda · Taplink · Claude</b></div>
+  <p class="hero-sub">Делаю стильные, понятные и продающие сайты. Беру проекты любой сложности — от лендинга до интернет-магазина.</p>
+  <div class="hero-actions">
+    <button class="pill solid" onclick="smoothTo('contact')">Обсудить проект</button>
+    <button class="pill" onclick="smoothTo('portfolio')">Портфолио</button>
+    <button class="pill" onclick="smoothTo('services')">Услуги</button>
+  </div>
+</section>
+
+<!-- О СЕБЕ -->
+<section class="section wrap" id="about">
+  <h2 class="section-title reveal">о себе</h2>
+  <div class="about-grid">
+    <div class="about-photo" style="background:none;border:none;padding:0;overflow:hidden">
+      <img src="photo.png" alt="Кирилл Симуков" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:22px">
+    </div>
+    <div class="about-right">
+      <p class="about-statement">Делаю сайты, которые приносят результат, а не просто красиво выглядят</p>
+      <p class="about-bio">Привет! Я Кирилл — веб-дизайнер и разработчик из Краснодара. Делаю сайты с 2022 года: начинал с лендингов, сейчас берусь за интернет-магазины и корпоративные проекты. К каждому заказу подхожу с погружением — изучаю нишу, конкурентов и цели бизнеса, чтобы сайт действительно работал на результат, а не только выглядел красиво.</p>
+      <div class="skills">
+        <span class="skill">Figma</span>
+        <span class="skill">Tilda</span>
+        <span class="skill">HTML / CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">UX / UI</span>
+        <span class="skill">Адаптивная вёрстка</span>
+        <span class="skill">CJM</span>
+        <span class="skill">Веб-аналитика</span>
+      </div>
+      <div class="about-nums">
+        <div><div class="an-num">60+</div><div class="an-lbl">проектов</div></div>
+        <div><div class="an-num">3+</div><div class="an-lbl">лет опыта</div></div>
+        <div><div class="an-num">98%</div><div class="an-lbl">повторных заказов</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПОРТФОЛИО -->
+<section class="section wrap" id="portfolio">
+  <h2 class="section-title reveal">портфолио</h2>
+  <div class="grid-3">
+    <div class="card" data-p="0">
+      <div class="card-cover" style="background:#1a1a1a;padding:0;overflow:hidden"><img src="projects/tapochki-real.png" alt="Подтапочки" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+      <div class="card-body"><div class="card-meta">Лендинг · 2025</div><div class="card-name">Подтапочки — ремонт под ключ</div><span class="card-link">Смотреть кейс →</span></div>
+    </div>
+    <div class="card" data-p="1">
+      <div class="card-cover" style="padding:0;overflow:hidden"><img src="projects/star-boxing-real.jpg" alt="Star Boxing" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+      <div class="card-body"><div class="card-meta">Лендинг · 2024</div><div class="card-name">Star Boxing</div><span class="card-link">Смотреть кейс →</span></div>
+    </div>
+    <div class="card" data-p="2">
+      <div class="card-cover" style="padding:0;overflow:hidden"><img src="projects/capital-real.jpg" alt="Capital Tour" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+      <div class="card-body"><div class="card-meta">Многостраничный сайт · 2024</div><div class="card-name">Capital Tour</div><span class="card-link">Смотреть кейс →</span></div>
+    </div>
+    <div class="card" data-p="3">
+      <div class="card-cover" style="padding:0;overflow:hidden"><img src="projects/neturist-real.jpg" alt="Neturist" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+      <div class="card-body"><div class="card-meta">Лендинг · 2024</div><div class="card-name">Neturist</div><span class="card-link">Смотреть кейс →</span></div>
+    </div>
+    <div class="card" data-p="4">
+      <div class="card-cover" style="padding:0;overflow:hidden"><img src="projects/vivarent-real.jpg" alt="Viva Rent" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+      <div class="card-body"><div class="card-meta">Многостраничный сайт · 2024</div><div class="card-name">Viva Rent</div><span class="card-link">Смотреть кейс →</span></div>
+    </div>
+    <div class="card" data-p="5">
+      <div class="card-cover" style="padding:0;overflow:hidden"><img src="projects/donles-real.png" alt="Donles NN" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+      <div class="card-body"><div class="card-meta">Корпоративный сайт · 2024</div><div class="card-name">Donles NN</div><span class="card-link">Смотреть кейс →</span></div>
+    </div>
+    <div class="card" data-p="6">
+      <div class="card-cover" style="padding:0;overflow:hidden"><img src="projects/saveschool-real.jpg" alt="Save School" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+      <div class="card-body"><div class="card-meta">Онлайн-школа · 2024</div><div class="card-name">Save School</div><span class="card-link">Смотреть кейс →</span></div>
+    </div>
+    <div class="card" data-p="7">
+      <div class="card-cover" style="padding:0;overflow:hidden"><img src="projects/technoprint-real.jpg" alt="Techno Print" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+      <div class="card-body"><div class="card-meta">Корпоративный сайт · 2023</div><div class="card-name">Techno Print</div><span class="card-link">Смотреть кейс →</span></div>
+    </div>
+    <div class="card" data-p="8">
+      <div class="card-cover" style="padding:0;overflow:hidden"><img src="projects/sgfam-real.png" alt="SG Family" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+      <div class="card-body"><div class="card-meta">Taplink · 2024</div><div class="card-name">Sexy Girlz Family</div><span class="card-link">Смотреть кейс →</span></div>
+    </div>
+    <div class="card" data-p="9">
+      <div class="card-cover" style="padding:0;overflow:hidden"><img src="projects/door-real.png" alt="Door" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+      <div class="card-body"><div class="card-meta">Taplink · 2024</div><div class="card-name">Door — архитектор Татьяна Рыжова</div><span class="card-link">Смотреть кейс →</span></div>
+    </div>
+    <div class="card" data-p="10">
+      <div class="card-cover" style="padding:0;overflow:hidden"><img src="projects/egb-real.png" alt="EG Bredihin" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+      <div class="card-body"><div class="card-meta">Taplink · 2024</div><div class="card-name">Бредихин Егор — ведущий мероприятий</div><span class="card-link">Смотреть кейс →</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- КАК Я РАБОТАЮ -->
+<section class="section wrap">
+  <h2 class="section-title reveal">работаю на результат и с комфортом для всех</h2>
+  <div class="principles">
+    <div class="principle"><div class="principle-num">[01]</div><h3>На связи</h3><p>Веду проект прозрачно: показываю каждый этап, держу клиента в курсе, остаюсь доступным и после сдачи.</p></div>
+    <div class="principle"><div class="principle-num">[02]</div><h3>В сроки</h3><p>Соблюдаю дедлайны и предупреждаю заранее, если что-то меняется. Без сюрпризов в финале.</p></div>
+    <div class="principle"><div class="principle-num">[03]</div><h3>По договору</h3><p>Работаю как самозанятый — с чеками и договором, защищающим обе стороны сотрудничества.</p></div>
+    <div class="principle"><div class="principle-num">[04]</div><h3>С погружением</h3><p>До начала макета изучаю нишу, аудиторию и конкурентов — чтобы сайт работал, а не только красиво выглядел.</p></div>
+    <div class="principle"><div class="principle-num">[05]</div><h3>На результат</h3><p>Делаю не просто красивый сайт, а инструмент: структура ведёт пользователя к целевому действию.</p></div>
+    <div class="principle"><div class="principle-num">[06]</div><h3>С поддержкой</h3><p>После запуска помогаю с правками, доработками и подключаю смежных специалистов, если они нужны.</p></div>
+  </div>
+</section>
+
+<!-- УСЛУГИ -->
+<section class="section wrap" id="services">
+  <h2 class="section-title reveal">услуги и стоимость</h2>
+  <div class="services">
+    <div class="service"><h3>Одностраничный сайт</h3><p>Сайт-визитка, промо-страница или продающий лендинг на одной странице с продуманным путём пользователя.</p><div class="service-meta">Срок<b>от 14 рабочих дней</b></div><div class="service-meta">Стоимость<b>от 60 000 ₽</b></div><button class="service-cta" onclick="smoothTo('contact')">Обсудить →</button></div>
+    <div class="service"><h3>Многостраничный сайт</h3><p>Сайт со сложной структурой: услуги, кейсы, о компании, контакты. От 5 страниц и больше.</p><div class="service-meta">Срок<b>от 22 рабочих дней</b></div><div class="service-meta">Стоимость<b>от 90 000 ₽</b></div><button class="service-cta" onclick="smoothTo('contact')">Обсудить →</button></div>
+    <div class="service"><h3>Интернет-магазин</h3><p>Сайт для продажи товаров с каталогом, корзиной, оплатой, личным кабинетом и нужными интеграциями.</p><div class="service-meta">Срок<b>от 28 рабочих дней</b></div><div class="service-meta">Стоимость<b>от 120 000 ₽</b></div><button class="service-cta" onclick="smoothTo('contact')">Обсудить →</button></div>
+    <div class="service"><h3>Онлайн-школа</h3><p>Упаковка образовательного продукта: программа, преподаватели, тарифы, личный кабинет ученика.</p><div class="service-meta">Срок<b>от 24 рабочих дней</b></div><div class="service-meta">Стоимость<b>от 100 000 ₽</b></div><button class="service-cta" onclick="smoothTo('contact')">Обсудить →</button></div>
+    <div class="service"><h3>Дизайн в Figma</h3><p>Только дизайн-макет под вёрстку: компоненты, состояния, адаптив, готовая дизайн-система.</p><div class="service-meta">Срок<b>от 16 рабочих дней</b></div><div class="service-meta">Стоимость<b>от 70 000 ₽</b></div><button class="service-cta" onclick="smoothTo('contact')">Обсудить →</button></div>
+    <div class="service"><h3>Индивидуальный запрос</h3><p>Редизайн, баннеры, презентации, оформление соцсетей, отдельные блоки — всё нестандартное.</p><div class="service-meta">Срок<b>индивидуально</b></div><div class="service-meta">Стоимость<b>по запросу</b></div><button class="service-cta" onclick="smoothTo('contact')">Обсудить →</button></div>
+  </div>
+</section>
+
+<!-- ЭТАПЫ -->
+<section class="section wrap" id="stages-section">
+  <h2 class="section-title reveal">этапы сотрудничества</h2>
+  <div class="stages">
+    <div class="stage"><div class="stage-num">[01]</div><div><h3>Обсуждение</h3><p>Знакомимся, уточняю цели, аудиторию, референсы. Отвечаю на вопросы, даю первые рекомендации.</p></div></div>
+    <div class="stage"><div class="stage-num">[02]</div><div><h3>Предложение</h3><p>Готовлю КП с описанием сроков, стоимости и состава работ. Обычно в нескольких тарифах на выбор.</p></div></div>
+    <div class="stage"><div class="stage-num">[03]</div><div><h3>Договор</h3><p>Подписываем договор, фиксируем сроки и оплату. Работа начинается только после подписания.</p></div></div>
+    <div class="stage"><div class="stage-num">[04]</div><div><h3>Анализ</h3><p>Изучаю нишу, конкурентов и аудиторию. Это база, на которой строятся все дальнейшие решения.</p></div></div>
+    <div class="stage"><div class="stage-num">[05]</div><div><h3>Мудборд</h3><p>Подбираю референсы, шрифты, цветовую палитру и визуальные ассоциации — задаю стилистику.</p></div></div>
+    <div class="stage"><div class="stage-num">[06]</div><div><h3>Прототип</h3><p>Собираю структуру блоков и страниц так, чтобы пользователь шёл по понятному пути к цели.</p></div></div>
+    <div class="stage"><div class="stage-num">[07]</div><div><h3>Концепция</h3><p>Рисую 1–3 варианта первого экрана и ключевых блоков — выбираем стилистическое направление.</p></div></div>
+    <div class="stage"><div class="stage-num">[08]</div><div><h3>Дизайн-макет</h3><p>По принятой концепции отрисовываю все экраны в Figma с компонентами, состояниями и адаптивом.</p></div></div>
+    <div class="stage"><div class="stage-num">[09]</div><div><h3>Вёрстка</h3><p>Перенос в Tilda или код, адаптация под все экраны, настройка форм, аналитики и интеграций.</p></div></div>
+    <div class="stage"><div class="stage-num">[10]</div><div><h3>Поддержка</h3><p>После запуска помогаю с правками 2–4 недели. После — продолжаю отвечать и поддерживать проект.</p></div></div>
+  </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section class="section wrap" id="reviews-section">
+  <h2 class="section-title reveal">отзывы</h2>
+  <div class="reviews">
+    <div class="review"><p class="review-text">Кирилл подошёл к задаче внимательно: разобрался в продукте, предложил несколько идей и выбрал лучшую. Сайт вышел современным — конверсия выросла почти в два раза за первый месяц.</p><div class="review-meta"><div class="ravatar">АК</div><div><b>Алексей К.</b><small>основатель Nord Studio</small></div></div></div>
+    <div class="review"><p class="review-text">Очень комфортный процесс работы. Кирилл всегда на связи, объясняет решения, направляет. Не приходилось ничего «доставать» — всё показывалось вовремя и понятно.</p><div class="review-meta"><div class="ravatar">МД</div><div><b>Мария Д.</b><small>маркетолог Pulse Fit</small></div></div></div>
+    <div class="review"><p class="review-text">Делали интернет-магазин под ключ: каталог, корзина, оплата. Всё работает с первого дня. Дизайн действительно продаёт — заявки начали приходить сразу после запуска.</p><div class="review-meta"><div class="ravatar">ОС</div><div><b>Ольга С.</b><small>Viva Decor</small></div></div></div>
+    <div class="review"><p class="review-text">Сделал нам корпоративный сайт за три недели. Продумано всё — от структуры до мелких микровзаимодействий. Поддержка после запуска тоже на высоте.</p><div class="review-meta"><div class="ravatar">ДВ</div><div><b>Дмитрий В.</b><small>Solar Tech</small></div></div></div>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section class="section wrap" id="contact">
+  <h2 class="contact-title">обсудим<br>проект?</h2>
+  <p style="color:var(--dim);max-width:520px;margin-bottom:34px;font-size:17px">Напишите в любой мессенджер — отвечу в течение пары часов в будни.</p>
+  <div class="contact-actions">
+    <button class="pill solid">Написать в Telegram</button>
+    <button class="pill">WhatsApp</button>
+    <button class="pill">Behance</button>
+    <button class="pill">Email</button>
+  </div>
+</section>
+
+<!-- ФУТЕР -->
+<footer class="wrap">
+  <div>КС &nbsp; На связи пн–сб 10:00–20:00 по МСК &nbsp; г. Краснодар</div>
+  <div style="align-self:flex-end">© 2022–2026, Кирилл Симуков · маркетинг в сайтах</div>
+  <div style="align-self:flex-end">
+    <a href="#" class="top-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">Наверх</a>
+  </div>
+</footer>
+
+<!-- МОДАЛЬНОЕ ОКНО ПРОЕКТА -->
+<div class="modal" id="projectModal" role="dialog" aria-modal="true">
+  <button class="modal-close" id="mClose" aria-label="Закрыть">✕</button>
+  <div class="modal-wrap">
+    <div class="modal-cover" id="mCover"></div>
+    <div class="modal-meta"  id="mMeta"></div>
+    <h2 class="modal-name"  id="mName"></h2>
+    <p class="modal-desc"   id="mDesc"></p>
+    <div class="modal-tags" id="mTags"></div>
+    <div class="modal-result" id="mResult"></div>
+    <div style="margin-top:32px;display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+      <a id="mLink" href="#" target="_blank" rel="noopener" class="modal-site-link">Посмотреть сайт →</a>
+      <button class="pill" onclick="closeModal()">← Назад</button>
+    </div>
+  </div>
+</div>
+
+<!-- ПАНЕЛЬ TWEAKS (React) -->
+<div id="tweaks-root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="portfolio-tweaks.jsx"></script>
+
+<!-- ОСНОВНОЙ СКРИПТ -->
+<script src="script.js"></script>
+
+</body>
+</html>
