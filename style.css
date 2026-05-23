@@ -11,7 +11,7 @@
   --line: rgba(62, 62, 62, .18);
   --accent: #c1001f;
   --ar: 193, 0, 31;
-  --sp: 1;
+  --sp: 1; 
 }
 [data-theme=dark] {
   --bg: #0f0d12;
