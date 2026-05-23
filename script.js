@@ -125,6 +125,17 @@ const PROJECTS = [
     desc: 'Личная Taplink-страница специалиста — портфолио, контакты, ссылки на профессиональные профили и соцсети в одной точке.',
     tags: ['Taplink', 'Личный бренд', 'Портфолио', 'SMM'],
     result: '↑ Единая точка входа для контактов и портфолио. Страница доступна на taplink.cc/egbredihin'
+  },
+  {
+    label: 'NAZGUL FLOR',
+    grad: 'linear-gradient(135deg,#1a1a1a,#3a3a3a)',
+    coverImg: 'projects/nazgulflor.png',
+    meta: 'Taplink · 2026',
+    name: 'Назгуль Флор — сайт для онлайн-репетитора японского языка',
+    url: 'https://nazgulflor.taplink.ws',
+    desc: 'Личная Taplink-страница специалиста — программы, услуги, контакты, отзывы и этапы работы в одном месте',
+    tags: ['Taplink', 'Личный бренд', 'Услуги', 'SMM'],
+    result: '↑ Разработка сайта для перевода трафика из соц-сетей. Страница доступна на nazgulflor.taplink.ws'
   }
 ];
 
