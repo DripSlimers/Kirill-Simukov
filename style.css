@@ -332,7 +332,7 @@ footer {
 .modal-close {
   position: fixed; top: 24px; right: 28px;
   width: 48px; height: 48px; border-radius: 50%;
-  border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+  border: 1.5px solid var(--line); background: var(--accent); color: var(--ink);
   display: grid; place-items: center; font-size: 20px;
   transition: all .25s; z-index: 10; cursor: pointer;
 }
