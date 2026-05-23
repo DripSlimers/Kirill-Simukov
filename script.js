@@ -30,7 +30,7 @@ const PROJECTS = [
   {
     label: 'CAPITAL',
     grad: 'linear-gradient(135deg,#05163a,#1a5fa6)',
-    coverImg: 'projects/capital-modal.png',
+    coverImg: 'projects/capital-real.png',
     meta: 'Многостраничный сайт · 2024',
     name: 'Capital Tour',
     url: 'https://capitaltour.ru/',
@@ -52,7 +52,7 @@ const PROJECTS = [
   {
     label: 'RENT',
     grad: 'linear-gradient(135deg,#1a0538,#7a2aac)',
-    coverImg: 'projects/vivarent-modal.png',
+    coverImg: 'projects/vivarent-real.png',
     meta: 'Лендинг · 2024',
     name: 'Viva Rent',
     url: 'https://www.vivarent.ru/',
